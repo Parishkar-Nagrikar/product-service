@@ -1,0 +1,200 @@
+2020-10-06 12:53:43 [main] INFO  com.ecart.ecart.EcartApplication - Starting EcartApplication on ParishkarN_MUM with PID 26456 (E:\TestSpace\ecart\build\classes\java\main started by ParishkarNagrikar in E:\TestSpace\ecart)
+2020-10-06 12:53:43 [main] INFO  com.ecart.ecart.EcartApplication - No active profile set, falling back to default profiles: default
+2020-10-06 12:53:43 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-10-06 12:53:43 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 38ms. Found 1 repository interfaces.
+2020-10-06 12:53:43 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9092 (http)
+2020-10-06 12:53:43 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-10-06 12:53:43 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.26]
+2020-10-06 12:53:44 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-10-06 12:53:44 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 909 ms
+2020-10-06 12:53:44 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-10-06 12:53:44 [main] INFO  org.mongodb.driver.cluster - Adding discovered server localhost:27017 to client view of cluster
+2020-10-06 12:53:44 [cluster-ClusterId{value='5f7c1b8030fc2e67589738c2', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:2636}] to localhost:27017
+2020-10-06 12:53:44 [cluster-ClusterId{value='5f7c1b8030fc2e67589738c2', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 1]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2829100}
+2020-10-06 12:53:44 [cluster-ClusterId{value='5f7c1b8030fc2e67589738c2', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Discovered cluster type of STANDALONE
+2020-10-06 12:53:44 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from class java.time.LocalDateTime to class java.time.Instant as reading converter although it doesn't convert from a store-supported type! You might wanna check you annotation setup at the converter implementation.
+2020-10-06 12:53:44 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from class java.time.Instant to class java.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might wanna check you annotation setup at the converter implementation.
+2020-10-06 12:53:44 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from class java.time.LocalDateTime to class java.time.Instant as reading converter although it doesn't convert from a store-supported type! You might wanna check you annotation setup at the converter implementation.
+2020-10-06 12:53:44 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from class java.time.Instant to class java.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might wanna check you annotation setup at the converter implementation.
+2020-10-06 12:53:44 [main] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:2637}] to localhost:27017
+2020-10-06 12:53:45 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-06 12:53:45 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9092 (http) with context path ''
+2020-10-06 12:53:45 [main] INFO  com.ecart.ecart.EcartApplication - Started EcartApplication in 2.28 seconds (JVM running for 2.758)
+2020-10-06 12:54:25 [http-nio-9092-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-06 12:54:25 [http-nio-9092-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-10-06 12:54:25 [http-nio-9092-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+2020-10-06 12:54:25 [http-nio-9092-exec-1] INFO  c.e.e.controller.ProductController -  productRequest :ProductRequest(productId=1002, name=seeds, description=The pack of 100 grams of asparagus plant seed, price=500.5, currencyCode=INR)
+2020-10-06 14:10:53 [http-nio-9092-exec-5] INFO  c.e.e.controller.ProductController -  productRequest :ProductRequest(productId=1003, name=seeds, description=The pack of 100 grams of asparagus plant seed, price=500.5, currencyCode=INR)
+2020-10-06 14:13:15 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.boot.context.properties.bind.BindException: Failed to bind properties under 'logging.level' to java.util.Map<java.lang.String, java.lang.String>
+	at org.springframework.boot.context.properties.bind.Binder.handleBindError(Binder.java:242)
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:218)
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:202)
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:172)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.setLogLevels(LoggingApplicationListener.java:338)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeFinalLoggingLevels(LoggingApplicationListener.java:314)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:265)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:226)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:203)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:127)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:76)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:53)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:342)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:305)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1204)
+	at com.ecart.ecart.EcartApplication.main(EcartApplication.java:10)
+Caused by: org.springframework.core.convert.ConverterNotFoundException: No converter found capable of converting from type [java.lang.String] to type [java.util.Map<java.lang.String, java.lang.String>]
+	at org.springframework.core.convert.support.GenericConversionService.handleConverterNotFound(GenericConversionService.java:321)
+	at org.springframework.core.convert.support.GenericConversionService.convert(GenericConversionService.java:194)
+	at org.springframework.boot.context.properties.bind.BindConverter$CompositeConversionService.convert(BindConverter.java:170)
+	at org.springframework.boot.context.properties.bind.BindConverter.convert(BindConverter.java:96)
+	at org.springframework.boot.context.properties.bind.BindConverter.convert(BindConverter.java:88)
+	at org.springframework.boot.context.properties.bind.MapBinder.bindAggregate(MapBinder.java:64)
+	at org.springframework.boot.context.properties.bind.AggregateBinder.bind(AggregateBinder.java:56)
+	at org.springframework.boot.context.properties.bind.Binder.lambda$bindAggregate$2(Binder.java:293)
+	at org.springframework.boot.context.properties.bind.Binder$Context.withIncreasedDepth(Binder.java:429)
+	at org.springframework.boot.context.properties.bind.Binder$Context.access$100(Binder.java:372)
+	at org.springframework.boot.context.properties.bind.Binder.bindAggregate(Binder.java:293)
+	at org.springframework.boot.context.properties.bind.Binder.bindObject(Binder.java:254)
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:214)
+	... 18 common frames omitted
+2020-10-06 14:13:58 [main] INFO  com.ecart.ecart.EcartApplication - Starting EcartApplication on ParishkarN_MUM with PID 22960 (E:\TestSpace\ecart\build\classes\java\main started by ParishkarNagrikar in E:\TestSpace\ecart)
+2020-10-06 14:13:58 [main] INFO  com.ecart.ecart.EcartApplication - No active profile set, falling back to default profiles: default
+2020-10-06 14:13:58 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-10-06 14:13:58 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 37ms. Found 1 repository interfaces.
+2020-10-06 14:13:59 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9092 (http)
+2020-10-06 14:13:59 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-10-06 14:13:59 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.26]
+2020-10-06 14:13:59 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-10-06 14:13:59 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 754 ms
+2020-10-06 14:13:59 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-10-06 14:13:59 [main] INFO  org.mongodb.driver.cluster - Adding discovered server localhost:27017 to client view of cluster
+2020-10-06 14:13:59 [cluster-ClusterId{value='5f7c2e4f30fc2e59b036b593', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:2780}] to localhost:27017
+2020-10-06 14:13:59 [cluster-ClusterId{value='5f7c2e4f30fc2e59b036b593', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 1]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1732200}
+2020-10-06 14:13:59 [cluster-ClusterId{value='5f7c2e4f30fc2e59b036b593', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Discovered cluster type of STANDALONE
+2020-10-06 14:13:59 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from class java.time.LocalDateTime to class java.time.Instant as reading converter although it doesn't convert from a store-supported type! You might wanna check you annotation setup at the converter implementation.
+2020-10-06 14:13:59 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from class java.time.Instant to class java.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might wanna check you annotation setup at the converter implementation.
+2020-10-06 14:13:59 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from class java.time.LocalDateTime to class java.time.Instant as reading converter although it doesn't convert from a store-supported type! You might wanna check you annotation setup at the converter implementation.
+2020-10-06 14:13:59 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from class java.time.Instant to class java.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might wanna check you annotation setup at the converter implementation.
+2020-10-06 14:13:59 [main] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:2781}] to localhost:27017
+2020-10-06 14:13:59 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-06 14:14:00 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9092 (http) with context path ''
+2020-10-06 14:14:00 [main] INFO  com.ecart.ecart.EcartApplication - Started EcartApplication in 1.922 seconds (JVM running for 2.432)
+2020-10-06 14:14:14 [http-nio-9092-exec-4] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-06 14:14:14 [http-nio-9092-exec-4] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-10-06 14:14:14 [http-nio-9092-exec-4] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+2020-10-06 14:14:15 [http-nio-9092-exec-4] INFO  c.e.e.controller.ProductController -  productRequest :ProductRequest(productId=1003, name=seeds, description=The pack of 100 grams of asparagus plant seed, price=500.5, currencyCode=INR)
+2020-10-06 14:14:51 [http-nio-9092-exec-6] INFO  c.e.e.controller.ProductController -  productRequest :ProductRequest(productId=1003, name=seeds, description=The pack of 100 grams of asparagus plant seed, price=500.5, currencyCode=INR)
+2020-10-06 14:21:32 [http-nio-9092-exec-7] INFO  c.e.e.controller.ProductController -  productRequest :ProductRequest(productId=1001, name=seeds, description=The pack of 100 grams of asparagus plant seed, price=500.5, currencyCode=INR)
+2020-10-06 14:21:39 [http-nio-9092-exec-10] INFO  c.e.e.controller.ProductController -  productRequest :ProductRequest(productId=1004, name=seeds, description=The pack of 100 grams of asparagus plant seed, price=500.5, currencyCode=INR)
+2020-10-06 14:21:48 [http-nio-9092-exec-1] INFO  c.e.e.controller.ProductController -  productRequest :ProductRequest(productId=1005, name=seeds, description=The pack of 100 grams of asparagus plant seed, price=500.5, currencyCode=INR)
+2020-10-06 14:22:13 [http-nio-9092-exec-4] INFO  c.e.e.controller.ProductController -  productRequest :ProductRequest(productId=1006, name=seeds, description=The pack of 100 grams of asparagus plant seed, price=500.5, currencyCode=INR)
+2020-10-06 14:23:17 [http-nio-9092-exec-2] INFO  c.e.e.controller.ProductController -  productRequest :ProductRequest(productId=1007, name=seeds, description=The pack of 100 grams of asparagus plant seed, price=500.5, currencyCode=INR)
+2020-10-06 14:23:22 [http-nio-9092-exec-6] INFO  c.e.e.controller.ProductController -  productRequest :ProductRequest(productId=1008, name=seeds, description=The pack of 100 grams of asparagus plant seed, price=500.5, currencyCode=INR)
+2020-10-06 14:23:26 [http-nio-9092-exec-9] INFO  c.e.e.controller.ProductController -  productRequest :ProductRequest(productId=1009, name=seeds, description=The pack of 100 grams of asparagus plant seed, price=500.5, currencyCode=INR)
+2020-10-06 14:23:31 [http-nio-9092-exec-8] INFO  c.e.e.controller.ProductController -  productRequest :ProductRequest(productId=1010, name=seeds, description=The pack of 100 grams of asparagus plant seed, price=500.5, currencyCode=INR)
+2020-10-06 14:38:30 [main] INFO  com.ecart.ecart.EcartApplication - Starting EcartApplication on ParishkarN_MUM with PID 21144 (E:\TestSpace\ecart\build\classes\java\main started by ParishkarNagrikar in E:\TestSpace\ecart)
+2020-10-06 14:38:30 [main] INFO  com.ecart.ecart.EcartApplication - No active profile set, falling back to default profiles: default
+2020-10-06 14:38:31 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-10-06 14:38:31 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 35ms. Found 1 repository interfaces.
+2020-10-06 14:38:31 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9092 (http)
+2020-10-06 14:38:31 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-10-06 14:38:31 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.26]
+2020-10-06 14:38:31 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-10-06 14:38:31 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 882 ms
+2020-10-06 14:38:32 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-10-06 14:38:32 [main] INFO  org.mongodb.driver.cluster - Adding discovered server localhost:27017 to client view of cluster
+2020-10-06 14:38:32 [cluster-ClusterId{value='5f7c341030fc2e529890d2df', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:2827}] to localhost:27017
+2020-10-06 14:38:32 [cluster-ClusterId{value='5f7c341030fc2e529890d2df', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 1]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1901500}
+2020-10-06 14:38:32 [cluster-ClusterId{value='5f7c341030fc2e529890d2df', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Discovered cluster type of STANDALONE
+2020-10-06 14:38:32 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from class java.time.LocalDateTime to class java.time.Instant as reading converter although it doesn't convert from a store-supported type! You might wanna check you annotation setup at the converter implementation.
+2020-10-06 14:38:32 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from class java.time.Instant to class java.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might wanna check you annotation setup at the converter implementation.
+2020-10-06 14:38:32 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from class java.time.LocalDateTime to class java.time.Instant as reading converter although it doesn't convert from a store-supported type! You might wanna check you annotation setup at the converter implementation.
+2020-10-06 14:38:32 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from class java.time.Instant to class java.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might wanna check you annotation setup at the converter implementation.
+2020-10-06 14:38:32 [main] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:2828}] to localhost:27017
+2020-10-06 14:38:32 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-06 14:38:32 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9092 (http) with context path ''
+2020-10-06 14:38:32 [main] INFO  com.ecart.ecart.EcartApplication - Started EcartApplication in 2.295 seconds (JVM running for 2.95)
+2020-10-06 14:40:07 [http-nio-9092-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-06 14:40:07 [http-nio-9092-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-10-06 14:40:07 [http-nio-9092-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+2020-10-06 14:41:13 [main] INFO  com.ecart.ecart.EcartApplication - Starting EcartApplication on ParishkarN_MUM with PID 24200 (E:\TestSpace\ecart\build\classes\java\main started by ParishkarNagrikar in E:\TestSpace\ecart)
+2020-10-06 14:41:13 [main] INFO  com.ecart.ecart.EcartApplication - No active profile set, falling back to default profiles: default
+2020-10-06 14:41:13 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-10-06 14:41:13 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 40ms. Found 1 repository interfaces.
+2020-10-06 14:41:14 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9092 (http)
+2020-10-06 14:41:14 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-10-06 14:41:14 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.26]
+2020-10-06 14:41:14 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-10-06 14:41:14 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 790 ms
+2020-10-06 14:41:14 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-10-06 14:41:14 [main] INFO  org.mongodb.driver.cluster - Adding discovered server localhost:27017 to client view of cluster
+2020-10-06 14:41:14 [cluster-ClusterId{value='5f7c34b230fc2e5e8806fc02', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:2834}] to localhost:27017
+2020-10-06 14:41:14 [cluster-ClusterId{value='5f7c34b230fc2e5e8806fc02', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 1]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1926200}
+2020-10-06 14:41:14 [cluster-ClusterId{value='5f7c34b230fc2e5e8806fc02', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Discovered cluster type of STANDALONE
+2020-10-06 14:41:14 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from class java.time.LocalDateTime to class java.time.Instant as reading converter although it doesn't convert from a store-supported type! You might wanna check you annotation setup at the converter implementation.
+2020-10-06 14:41:14 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from class java.time.Instant to class java.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might wanna check you annotation setup at the converter implementation.
+2020-10-06 14:41:14 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from class java.time.LocalDateTime to class java.time.Instant as reading converter although it doesn't convert from a store-supported type! You might wanna check you annotation setup at the converter implementation.
+2020-10-06 14:41:14 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from class java.time.Instant to class java.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might wanna check you annotation setup at the converter implementation.
+2020-10-06 14:41:14 [main] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:2835}] to localhost:27017
+2020-10-06 14:41:15 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-06 14:41:15 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9092 (http) with context path ''
+2020-10-06 14:41:15 [main] INFO  com.ecart.ecart.EcartApplication - Started EcartApplication in 1.981 seconds (JVM running for 2.483)
+2020-10-06 14:41:21 [http-nio-9092-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-06 14:41:21 [http-nio-9092-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-10-06 14:41:21 [http-nio-9092-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+2020-10-06 15:26:10 [main] INFO  c.e.p.ProductServiceApplication - Starting ProductServiceApplication on ParishkarN_MUM with PID 20128 (E:\TestSpace\e-commerce\product-service\build\classes\java\main started by ParishkarNagrikar in E:\TestSpace\e-commerce\product-service)
+2020-10-06 15:26:10 [main] INFO  c.e.p.ProductServiceApplication - No active profile set, falling back to default profiles: default
+2020-10-06 15:26:11 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-10-06 15:26:11 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 35ms. Found 1 repository interfaces.
+2020-10-06 15:26:11 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9092 (http)
+2020-10-06 15:26:11 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-10-06 15:26:11 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.26]
+2020-10-06 15:26:11 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-10-06 15:26:11 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 770 ms
+2020-10-06 15:26:11 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-10-06 15:26:11 [main] INFO  org.mongodb.driver.cluster - Adding discovered server localhost:27017 to client view of cluster
+2020-10-06 15:26:11 [cluster-ClusterId{value='5f7c3f3b30fc2e4ea0d365a3', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:2916}] to localhost:27017
+2020-10-06 15:26:11 [cluster-ClusterId{value='5f7c3f3b30fc2e4ea0d365a3', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 1]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1819400}
+2020-10-06 15:26:11 [cluster-ClusterId{value='5f7c3f3b30fc2e4ea0d365a3', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Discovered cluster type of STANDALONE
+2020-10-06 15:26:11 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from class java.time.LocalDateTime to class java.time.Instant as reading converter although it doesn't convert from a store-supported type! You might wanna check you annotation setup at the converter implementation.
+2020-10-06 15:26:11 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from class java.time.Instant to class java.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might wanna check you annotation setup at the converter implementation.
+2020-10-06 15:26:12 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from class java.time.LocalDateTime to class java.time.Instant as reading converter although it doesn't convert from a store-supported type! You might wanna check you annotation setup at the converter implementation.
+2020-10-06 15:26:12 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from class java.time.Instant to class java.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might wanna check you annotation setup at the converter implementation.
+2020-10-06 15:26:12 [main] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:2917}] to localhost:27017
+2020-10-06 15:26:12 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-06 15:26:12 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9092 (http) with context path ''
+2020-10-06 15:26:12 [main] INFO  c.e.p.ProductServiceApplication - Started ProductServiceApplication in 2.193 seconds (JVM running for 3.018)
+2020-10-06 15:26:24 [http-nio-9092-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-06 15:26:24 [http-nio-9092-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-10-06 15:26:24 [http-nio-9092-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+2020-10-06 15:33:47 [main] INFO  c.e.p.ProductServiceApplication - Starting ProductServiceApplication on ParishkarN_MUM with PID 26540 (E:\TestSpace\e-commerce\product-service\build\classes\java\main started by ParishkarNagrikar in E:\TestSpace\e-commerce\product-service)
+2020-10-06 15:33:47 [main] INFO  c.e.p.ProductServiceApplication - No active profile set, falling back to default profiles: default
+2020-10-06 15:33:47 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-10-06 15:33:47 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 36ms. Found 1 repository interfaces.
+2020-10-06 15:33:47 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9092 (http)
+2020-10-06 15:33:47 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-10-06 15:33:47 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.26]
+2020-10-06 15:33:47 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-10-06 15:33:47 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 840 ms
+2020-10-06 15:33:48 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-10-06 15:33:48 [main] INFO  org.mongodb.driver.cluster - Adding discovered server localhost:27017 to client view of cluster
+2020-10-06 15:33:48 [cluster-ClusterId{value='5f7c410430fc2e67ac6a966c', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:2935}] to localhost:27017
+2020-10-06 15:33:48 [cluster-ClusterId{value='5f7c410430fc2e67ac6a966c', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 1]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1670000}
+2020-10-06 15:33:48 [cluster-ClusterId{value='5f7c410430fc2e67ac6a966c', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Discovered cluster type of STANDALONE
+2020-10-06 15:33:48 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from class java.time.LocalDateTime to class java.time.Instant as reading converter although it doesn't convert from a store-supported type! You might wanna check you annotation setup at the converter implementation.
+2020-10-06 15:33:48 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from class java.time.Instant to class java.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might wanna check you annotation setup at the converter implementation.
+2020-10-06 15:33:48 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from class java.time.LocalDateTime to class java.time.Instant as reading converter although it doesn't convert from a store-supported type! You might wanna check you annotation setup at the converter implementation.
+2020-10-06 15:33:48 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from class java.time.Instant to class java.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might wanna check you annotation setup at the converter implementation.
+2020-10-06 15:33:48 [main] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:2936}] to localhost:27017
+2020-10-06 15:33:48 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-06 15:33:48 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9092 (http) with context path ''
+2020-10-06 15:33:48 [main] INFO  c.e.p.ProductServiceApplication - Started ProductServiceApplication in 2.032 seconds (JVM running for 2.566)
+2020-10-06 15:35:01 [http-nio-9092-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-06 15:35:01 [http-nio-9092-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-10-06 15:35:01 [http-nio-9092-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2020-10-06 15:35:01 [http-nio-9092-exec-2] INFO  c.e.p.controller.ProductController -  productRequest :ProductRequest(productId=1010, name=seeds, description=The pack of 100 grams of asparagus plant seed, price=500.5, currencyCode=INR, quantity=100)

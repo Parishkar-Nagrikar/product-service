@@ -1,0 +1,19 @@
+Server:
+  port: 9092
+
+spring:
+  data:
+    mongodb:
+      #authentication-database: mcafee
+      #username: root
+      #password: root123
+      database: ecommerce
+      port: 27017
+      host: localhost
+
+logging:
+  file: logs/application-info.log
+  pattern:
+    console: "%d %-5level %logger : %msg%n"
+    //file: /logs/application-debug.log
+    file: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
